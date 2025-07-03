@@ -1,0 +1,116 @@
+.header {
+  max-width: 100%;
+  width: 100%;
+  background-color: #fff;
+}
+/*section css */
+/* Positioning */
+.slectedLanguange {
+  display: flex;
+  align-items: center;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 10px;
+  border: none;
+  border-radius: 4px;
+  background: #fff;
+  margin-right: 12px;
+}
+
+/* Popup styling */
+.change-lng {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 12;
+  background-color: #fff;
+  max-width: 33.33%;
+  width: 100%;
+  border-radius: 2px;
+}
+
+.lnghdr {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 1.2rem;
+  text-align: center;
+  margin-top: 30px;
+}
+
+.option-grid {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  justify-content: center;
+}
+
+.item {
+  flex: 1 1 33%;
+  background: transparent;
+  padding: 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.3s;
+  padding-left: 15px;
+}
+.item:last-child {
+  padding-bottom: 20px;
+}
+.item.full {
+  flex: 1 1 100%;
+}
+
+.item:hover {
+  background: #71bdc02e;
+}
+
+.close-btn {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+}
+.top-ctr-header {
+  padding: 0.5rem 0;
+}
+.top-ctr-header,
+.right-bxHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.top-ctr-header .logo-bx {
+  max-width: 214px;
+  width: 100%;
+}
+.top-ctr-header .logo-bx img {
+  width: 100%;
+}
+.signInBtn {
+  border: 1px solid #000;
+  background-color: transparent;
+}
+.btn {
+  min-width: 10.625rem;
+  padding: 16px 32px;
+  margin-left: 1.5rem;
+  transition: all 1.2s;
+  max-height: 50px;
+}
+.signInBtn:hover {
+  background-color: #000;
+  color: #fff;
+}
+.popupBg {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  z-index: 100;
+}
