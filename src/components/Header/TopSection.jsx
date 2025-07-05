@@ -10,7 +10,7 @@ const TopSection = ({setGlobalLanguage}) => {
   const languageLabels = {
     en: "English",
     ja: "日本語",
-    zh: "中文"
+    zh: "中文",
   };
 
   const [selectedLanguage, setSelectedLanguage] = useState("en");
